@@ -39,7 +39,15 @@
   <script>
     // basicの間はここにJavaScriptを直接記載しましょう
     // オリジナル PPAPペンパイナッポーアッポーペンを作成しコンソール画面に出力
+    console.log('Pen-Pineapple-Apple-Pen');
+    const btn = document.getElementById('ppap');
     // 3つのテキストボックスにそれぞれ単語を入れて「PPAP」ボタンを押すと、単語の間にハイフンを入れて合体させてください
+    btn.onclick = () => {
+      let pen = document.getElementById('pen').value;
+      let pineapple = document.getElementById('pineapple').value;
+      let apple = document.getElementById('apple').value;
+      console.log(`${pen}-${pineapple}-${apple}-${pen}`);
+    }
     // 目標出力　Pen-PineApple-Apple-Pen 
     
 
